@@ -102,13 +102,6 @@ dolphin-plugin/       KVersionControlPlugin behind the Dolphin badges
 Your data stays out of the repo, in `~/.local/share/yadisk/` (config, pinned
 state, rclone.conf, logs) and `~/.cache/yadisk/` (downloaded files).
 
-## About
-
-The toolbar and the tray both open **About Yandex.Disk GUI**: icon, name,
-`Version 1.0`, `SUDALV · 26.10.2026`. The strings are `__version__` and
-`__date__` in `yadisk/__init__.py` (the date is shown as day.month.year); the
-README header and the plugin's `KPlugin.Version` carry the same numbers.
-
 ## Notes
 
 * Dolphin only loads emblems from the icon theme, so the badges go into
