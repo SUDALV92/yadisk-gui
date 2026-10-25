@@ -1,0 +1,10 @@
+{
+    "KPlugin": {
+        "Id": "yadisk_vcs",
+        "Name": "YandexDisk",
+        "Description": "Shows which files are on this PC, only in the cloud, or kept offline",
+        "Icon": "folder-cloud",
+        "License": "GPL-2.0-or-later",
+        "Version": "1.0"
+    }
+}

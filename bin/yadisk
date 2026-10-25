@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+"""Launcher for the Yandex Disk shadow-files app.
+
+Works both from a git checkout (../yadisk next to this script) and from an
+installed layout (~/.local/lib/yadisk).
+"""
+import os
+import sys
+
+here = os.path.dirname(os.path.realpath(__file__))
+for cand in (os.path.dirname(here), os.path.expanduser("~/.local/lib")):
+    if os.path.isdir(os.path.join(cand, "yadisk")):
+        sys.path.insert(0, cand)
+        break
+else:  # pragma: no cover - only when the checkout is broken
+    sys.exit("cannot find the 'yadisk' package next to this launcher")
+
+from yadisk.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    sys.exit(main())

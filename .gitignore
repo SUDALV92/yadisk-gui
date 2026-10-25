@@ -1,0 +1,23 @@
+# byte-code / build artefacts
+__pycache__/
+*.py[cod]
+*.so
+*.moc
+dolphin-plugin/build/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# local runtime data must never be committed
+config.json
+state/
+logs/
+rclone.conf
